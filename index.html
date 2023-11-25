@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pattern by gyan</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" onclick="pattern()">Patterns</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="home()">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="heading-container d-flex justify-content-center col-12" id="mainHeadingContainer" >
+        <h1 class="main-heading p-5">Choose Pattern</h1>
+      </div>
+
+      <div class="cards-list d-flex justify-content-center flex-wrap text-center" id="cardContainer">
+
+        <div class="card col-12 col-sm-6 col-lg-3 shadow m-3" style="width: 18rem;" onclick="rHalfPyramid()">
+          <img src="images/RPyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Rright Half Pyramid</p>
+          </div>
+
+        </div>
+        <div class="card col-12 col-sm-6 col-lg-3 shadow m-3" style="width: 18rem;"  onclick="lHalfPyramid()">
+          <img src="images/LPyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Left Half Pyramid</p>
+          </div>
+        </div>
+
+        <div class="card col-12 col-sm-6 col-lg-3 shadow m-3" style="width: 18rem;" onclick="fullPyramid()">
+          <img src="images/CPyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Full Pyramid</p>
+          </div>
+        </div>
+
+        <div class="card col-12 col-sm-6 col-lg-3 m-3 shadow" style="width: 18rem;" onclick="invertedHalfPYramid()">
+          <img src="images/Inverted right pyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Inverted Right Pyramid</p>
+          </div>
+        </div>
+
+        <div class="card col-12 col-sm-6 col-lg-3 m-3 shadow" style="width: 18rem;" onclick="invertedLeftHalfPyramid()">
+          <img src="images/Inverrted left pyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Inverted Leftt Pyramid</p>
+          </div>
+        </div>
+
+        <div class="card col-12 col-sm-6 col-lg-3 m-3 shadow" style="width: 18rem;" onclick="invertedFullPyramid()">
+          <img src="images/inverted full pyramid.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Inverted Full Pyramid</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-half-pyramid d-none" id="rightHalfPyramid">
+        <h2>Right Half Pyramid</h2>
+        <p>The right-half pyramid is nothing but a right-angle triangle whose hypotenuse is in the right direction. We can print the right half pyramid pattern using numbers, alphabets, or any other character like a star (*).</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/RightHalfPyramidCode.png" alt="Right Half Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/righthalfpyramidoutput.png" alt="code output">
+      </div>
+
+      <div class="left-half-pyramid d-none" id="leftHalfPyramid">
+        <h2>Left Half Pyramid</h2>
+        <p>The Left Half Pyramid looks like a right-angled triangle with its hypotenuse facing the left. We can also print this pattern using a character, alphabets, or numbers.</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/LeftHalfPyramidcode.png" alt="Right Half Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/LeftHalfPyramidOutput.png" alt="code output">
+      </div>
+
+      <div class="left-half-pyramid d-none" id="fullPyramid">
+        <h2>Full Pyramid</h2>
+        <p>The Full Pyramid pattern looks similar to the Equilateral triangle. We can see this as the combination of the Left Half and Right Half pyramids patterns. The following example demonstrates how to print this pattern using alphabets, numbers, or a star (*).</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/FullPyramidCode.png" alt="Full Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/FullPyramidoutput.png" alt="code output">
+      </div>
+
+      <div class="left-half-pyramid d-none" id="invertedHalfPyramid">
+        <h2>Inverted Right Pyramid</h2>
+        <p>This pattern is the 180° flipped version of the Right Half Pyramid Pattern.</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/InvertedRightHalfCode.png" alt="Full Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/InvrtedRightHalfOutput.png" alt="code output">
+      </div>
+
+      <div class="left-half-pyramid d-none" id="invertedLeftPyramid">
+        <h2>Inverted Left Pyramid</h2>
+        <p>This pattern is the 180° flipped version of the left half pyramid pattern.</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/InvertedLeftPyramidCode.png" alt="Full Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/InvertedLeftPyramidOutput.png" alt="code output">
+      </div>
+
+      <div class="left-half-pyramid d-none" id="invertedFullPyramid">
+        <h2>Inverted Full Pyramid</h2>
+        <p>It is a 180° flipped version of the Full Pyramid Pattern we discussed earlier.</p>
+        <h3>Code</h3>
+        <img class="col-6" src="code images/InvertedFullPyramidCode.png" alt="Full Pyramid">
+        <h3>Output</h3>
+        <img class="col-3" src="code images/InvertedFullPyramidOutput.png" alt="code output">
+      </div>
+      
+
+      <div class="sectionTwo col-12 m-5 rounded shadow" style="background-color: aliceblue;"> 
+        <div class="input-section">
+          <h2>Choose your Pattern</h2>
+          <input type="text" placeholder="Input a character" maxlength="1" class="col-12" style="width:30%;">
+          <label for=""></label>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
